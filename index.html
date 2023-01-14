@@ -12,7 +12,7 @@
         :root {
             --bg: black;
             --display: #30db5e;
-            --shadow: #19191a
+            --shadow: #19191a;
             --muted: #797980;
         }
 
@@ -240,7 +240,7 @@
                 "Saturday",
             ];
             const month = now.toLocaleString("default", { month: "long" });
-            const day = now.getUTCDate();
+            const day = now.getDate();
             const year = now.getFullYear();
 
             document.getElementById(
