@@ -1,4 +1,4 @@
-// this object stores information about which borders are hidden
+// stores information about which borders are hidden
 // for each number to properly display them on the user interface
 const hiddenBorders = {
     0: {
@@ -95,15 +95,9 @@ const updateTime = () => {
     const displayedElements = document.getElementById("clock-display").children;
 
     // filter the retrieved elements such that only the digits are left
-    // since they are the only ones that the program need to modify
     const displayedDigits = [...displayedElements].filter(
         (element) => !element.classList.contains("divider")
     );
-
-    // remove old classes to reset the states of the numbers
-    for (let i = 0; i < displayedDigits.length; i++) {
-        displayedDigits[i].className = "";
-    }
 
     // add appropriate classes to the elements to hide certain borders
     for (let i = 0; i < displayedDigits.length; i++) {
@@ -118,7 +112,7 @@ const updateTime = () => {
     }
 };
 
-// this function returns a string consisting of the CSS classes that must be
+// returns a string consisting of the CSS classes that must be
 // applied for a given number to hide appropriate borders
 const getClasses = (hiddenBorders) => {
     let classes = "";
@@ -128,7 +122,7 @@ const getClasses = (hiddenBorders) => {
     return classes;
 };
 
-// function that calls updateTime() every 1 second
+// calls updateTime() every 1 second
 // to update the displayed time on the screen
 const startClock = () => {
     setInterval(() => {
