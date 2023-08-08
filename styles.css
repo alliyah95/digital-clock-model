@@ -1,0 +1,94 @@
+:root {
+    --bg: black;
+    --display: #30db5e;
+    --shadow: #19191a;
+    --muted: #797980;
+}
+
+body {
+    background-color: var(--bg);
+}
+
+.number-top,
+.number-bottom {
+    border: 13px var(--display) solid;
+    border-radius: 7px;
+    height: 80px;
+    width: 100px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 1000px;
+    min-height: 100vh;
+}
+
+#clock-display {
+    display: flex;
+}
+
+.hidden-border-top {
+    border-top: 13px var(--shadow) solid;
+}
+
+.hidden-border-left {
+    border-left: 13px var(--shadow) solid;
+}
+
+.hidden-border-right {
+    border-right: 13px var(--shadow) solid;
+}
+
+.hidden-border-bottom {
+    border-bottom: 13px var(--shadow) solid;
+}
+
+.divider {
+    height: 180px;
+    width: 10px;
+    margin: 0 20px;
+}
+
+.square-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid transparent;
+    height: 80px;
+    width: 5px;
+}
+
+.square {
+    border: 5px var(--display) solid;
+    width: 8px;
+    height: 3px;
+}
+
+#a,
+#b,
+#c {
+    margin-right: 15px;
+}
+
+.info {
+    margin-top: 10px;
+    font-family: "Orbitron", sans-serif;
+    font-weight: bolder;
+    color: var(--display);
+}
+
+button {
+    background-color: var(--bg);
+    color: var(--muted);
+    cursor: pointer;
+    font-family: "Orbitron", sans-serif;
+}
+
+button:hover,
+button:active {
+    color: var(--display);
+}
