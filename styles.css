@@ -82,13 +82,12 @@ body {
 }
 
 button {
-    background-color: var(--bg);
-    color: var(--muted);
+    border: none;
+    background-color: var(--display);
+    color: var(--bg);
     cursor: pointer;
     font-family: "Orbitron", sans-serif;
-}
-
-button:hover,
-button:active {
-    color: var(--display);
+    padding: 10px 40px;
+    border-radius: 7px;
+    margin-top: 20px;
 }
